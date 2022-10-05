@@ -1,0 +1,224 @@
+/* start global  */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+/* end global */
+
+
+/* start body */
+
+body {
+    background-color: var(--main-BG);
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    height: calc(100vh - 1px);
+}
+
+
+/* end body */
+
+
+/* start container */
+
+.container {
+    background-color: var(--card-BG);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* end container */
+
+
+/* strat image */
+
+.container .main-image img {
+    max-width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.container .main-image {
+    position: relative;
+}
+
+.container .main-image div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    opacity: 0;
+}
+
+.container .main-image div:hover {
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/* end image */
+
+@media (min-width:375px) {
+    .container {
+        width: 350px;
+    }
+}
+
+
+/* start h1 */
+
+h1 {
+    color: var(--White);
+    font-size: 1.5em;
+    margin-bottom: 1.25rem;
+}
+
+.container h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* end h1 */
+
+
+/* start p */
+
+.container p {
+    color: var(--Soft-blue);
+    margin-bottom: 1rem;
+}
+
+
+/* end p */
+
+
+/* start time */
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.time .one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time .two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time p {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.time .one p {
+    color: var(--Cyan);
+}
+
+.time .two p {
+    color: var(--Soft-blue);
+    font-weight: 400;
+}
+
+
+/* end time */
+
+
+/* start hr */
+
+.container hr {
+    background-color: var(--line);
+    border: none;
+    height: 1px;
+    margin-bottom: 15.25px;
+}
+
+
+/* end hr */
+
+
+/* start last */
+
+.container .last {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .last img {
+    width: 60px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    margin-left: -40px;
+}
+
+.container .last p {
+    margin-left: -70px;
+    margin-top: 15px;
+    color: var(--Soft-blue);
+}
+
+.container .last span {
+    color: var(--White);
+}
+
+.container .last span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* end last */
+
+
+/* the end */
+
+.attribution {
+    color: white;
+    font-weight: 600;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Cyan);
+}
